@@ -19714,11 +19714,11 @@ p4aRiIiIiIgEPTWMREREREQk6KlhJCIiIiIiQU8NIxERERERCXpqGImIiIiISNBTw0hERERERILe
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<h4 id="Variance-explained-in-total-by-the-first-and-second-principal-component-=-(0.4430+0.2638)/2-=0.3534">Variance explained in total by the first and second principal component = (0.4430+0.2638)/2 =0.3534<a class="anchor-link" href="#Variance-explained-in-total-by-the-first-and-second-principal-component-=-(0.4430+0.2638)/2-=0.3534">&#182;</a></h4><h4 id="Variance-explained-in-total-by-the-first-four-principal-components-=-(0.4430+0.2638+0.1231+0.1012)/4-=0.2328">Variance explained in total by the first four principal components = (0.4430+0.2638+0.1231+0.1012)/4 =0.2328<a class="anchor-link" href="#Variance-explained-in-total-by-the-first-four-principal-components-=-(0.4430+0.2638+0.1231+0.1012)/4-=0.2328">&#182;</a></h4><ol>
-<li>The highest correlation in the first principal component is of detergents_paper while fresh and frozen are negative-weighted features.</li>
-<li>In the second principal component, all the features are positively weighted with fresh being the maximum and Detergents_paper being the minimum.</li>
-<li>Fresh is the most negative weighted feature followed by detergents and all the other features are positively weighted in the third principal component.</li>
-<li>In the fourth principal component, Delicatessen is negatively weighted, along with fresh while all the other features are positively weighted.</li>
+<h4 id="Variance-explained-in-total-by-the-first-and-second-principal-component-=-0.4430+0.2638-=-0.7068">Variance explained in total by the first and second principal component = 0.4430+0.2638 = 0.7068<a class="anchor-link" href="#Variance-explained-in-total-by-the-first-and-second-principal-component-=-0.4430+0.2638-=-0.7068">&#182;</a></h4><h4 id="Variance-explained-in-total-by-the-first-four-principal-components-=-0.4430+0.2638+0.1231+0.1012-=0.9311">Variance explained in total by the first four principal components = 0.4430+0.2638+0.1231+0.1012 =0.9311<a class="anchor-link" href="#Variance-explained-in-total-by-the-first-four-principal-components-=-0.4430+0.2638+0.1231+0.1012-=0.9311">&#182;</a></h4><ol>
+<li>The highest correlation in the first principal component is of detergents_paper while fresh and frozen are negative-weighted features. The customer most likely represents a cafe.</li>
+<li>In the second principal component, all the features are positively weighted with fresh being the maximum and Detergents_paper being the minimum. The customer most likely represents a retail store.</li>
+<li>Fresh is the most negative weighted feature followed by detergents and all the other features are positively weighted in the third principal component. The customer most likely represents a meat store.</li>
+<li>In the fourth principal component, Delicatessen is negatively weighted, along with fresh while all the other features are positively weighted. The customer most likely represents a dining restaraunt.</li>
 </ol>
 
 </div>
@@ -20950,8 +20950,8 @@ t4CvDYBlzDLYAADAZOgAAQAAkyEAAQAAkyEAAQAAkyEAAQAAkyEAAQAAkyEAAQAAkyEAAQAAk/H/
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <ul>
-<li>Segment 0 orders high amount of <code>Milk</code> and <code>Grocery</code> along with <code>Detergent paper</code>. Thus it could possibly represent a cafe.</li>
-<li>Segment 1 seems to represent a supermarket since <code>Fresh</code>, <code>Grocery</code> and <code>Frozen</code> are ordered in high volumes while others are ordered in fairly low volumes.</li>
+<li>Segment 0, the left side of the clusters, orders relatively higher amount of <code>Milk</code> and <code>Grocery</code> along with <code>Detergent paper</code>, this could possibly mean that segment 0 is most likely a cafe.</li>
+<li>Segment 1, the right side of the clusters, seems to represent a supermarket since <code>Fresh</code>, <code>Grocery</code> and <code>Frozen</code> are ordered in high volumes while others are ordered in fairly low volumes.</li>
 </ul>
 
 </div>
@@ -21004,13 +21004,14 @@ Sample point 2 predicted to be in Cluster 0
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong></p>
+<p><strong>Answer:</strong> 
+For sample 0 and 1, the customer segment 0 on the left side of the cluster pointing towards a cafe would be the best representation. As for sample 1, the customer segment 1 on the right side of cluster pointing towards a supermarket would be the best representation.</p>
 <ul>
 <li>Sample 0, classified as a restaraunt is classified in cluster 0.</li>
 <li>Sample 1, classified as a market is classified in cluster 1.</li>
 <li>Sample 2, classified as a cafe is classified in cluster 0.</li>
 </ul>
-<p>Thus, the predictions can be said to be consistent with the customer segments.</p>
+<p>Thus, the predictions can be said to be consistent with the customer segments predicted above as sample 0 was predicted to be a restaraunt, which is precise with respect to the answer of question 8(cafe). Sample 1 was predicted to be a market which is correct and sample 2 was predicted to be a cafe which is the case in answer of question 8 indeed.</p>
 
 </div>
 </div>
@@ -21064,6 +21065,7 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> Knowing all the features and using 'customer segment' as labels, we can easily classify the new customers using SVM or Decision Trees. By training the model after labeling the data and then predicting those labels or customer segments over the test set, the distributor can easily know which category the new customer belongs to and thus make the right decision about which type of delivery service to provide.</p>
+<p>Other input feature the supervised learner can use besides the six product features to help make a prediction can be a feature such as 'location of the customer' as restaraunts are likely to be in different places as compared to markets. Or the learner could use feature such as 'expenditure' as for how much a customer spends in total to classify the size of establishment based on how high its expenditure is.</p>
 
 </div>
 </div>
