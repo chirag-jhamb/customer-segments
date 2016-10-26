@@ -1,19 +1,8 @@
 # Project 3: Unsupervised Learning
 ## Creating Customer Segments
-
-### Install
-
-This project requires **Python 2.7** and the following Python libraries installed:
-
-- [NumPy](http://www.numpy.org/)
-- [Pandas](http://pandas.pydata.org)
-- [matplotlib](http://matplotlib.org/)
-- [scikit-learn](http://scikit-learn.org/stable/)
-
-You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
-
-Udacity recommends our students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
-
+![clusters](https://s3.amazonaws.com/accredible_api_evidence_items/previews/181446/large/1472036994076?1472036157)
+### Project:
+Reviewed unstructured data to understand the patterns and natural categories that the data fits into. Used multiple algorithms and both empirically and theoretically compared and contrasted their results. Made predictions about the natural categories of multiple types in a dataset, then checked these predictions against the result of unsupervised analysis.
 ### Code
 
 Template code is provided in the notebook `customer_segments.ipynb` notebook file. Additional supporting code can be found in `renders.py`. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project.
